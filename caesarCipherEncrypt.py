@@ -10,8 +10,6 @@ def encrypt(message, key):
 
                 letter_position_in_alphabet = ord(letter) - 97
 
-                print (letter_position_in_alphabet)
-
             else:
 
                 letter_position_in_alphabet = ord(letter) - 65
@@ -29,8 +27,6 @@ def encrypt(message, key):
         else:
 
             encrypted_message += letter
-
-    print (encrypted_message)
 
     return encrypted_message
 
@@ -57,4 +53,6 @@ while True:
 
         break
 
-encrypt(message, key)
+encrypted_message = encrypt(message, key)
+
+print ("The encrypted message is :",encrypted_message)
